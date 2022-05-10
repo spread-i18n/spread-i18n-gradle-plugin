@@ -1,6 +1,7 @@
 plugins {
     // Apply the Java Gradle plugin development plugin to add support for developing Gradle plugins
     `java-gradle-plugin`
+    //`kotlin-gradle-plugin`
 }
 
 repositories {
@@ -16,8 +17,8 @@ dependencies {
 gradlePlugin {
     // Define the plugin
     val greeting by plugins.creating {
-        id = "com.example.plugin.greeting"
-        implementationClass = "com.example.plugin.GreetingPlugin"
+        id = "com.andro.spreadi18ngradle"
+        implementationClass = "com.andro.spreadi18ngradle.LocalizePlugin"
     }
 }
 

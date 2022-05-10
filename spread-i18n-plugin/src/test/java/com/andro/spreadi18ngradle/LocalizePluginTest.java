@@ -1,19 +1,18 @@
-package com.example.plugin;
+package com.andro.spreadi18ngradle;
 
 import org.gradle.testfixtures.ProjectBuilder;
 import org.gradle.api.Project;
 import org.junit.Test;
 import static org.junit.Assert.assertNotNull;
 
-
-public class GreetingPluginTest {
+public class LocalizePluginTest {
     @Test
     public void pluginRegistersATask() {
         // Create a test project and apply the plugin
         Project project = ProjectBuilder.builder().build();
-        project.getPlugins().apply("com.example.plugin.greeting");
+        project.getPlugins().apply("com.andro.spreadi18ngradle");
 
         // Verify the result
-        assertNotNull(project.getTasks().findByName("greet"));
+        assertNotNull(project.getTasks().findByName("localize"));
     }
 }
