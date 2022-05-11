@@ -18,8 +18,8 @@ dependencies {
 gradlePlugin {
     // Define the plugin
     val greeting by plugins.creating {
-        id = "com.andro.spreadi18ngradle"
-        implementationClass = "com.andro.spreadi18ngradle.LocalizePlugin"
+        id = "com.andro.spreadi18ngradleplugin"
+        implementationClass = "com.andro.spreadi18ngradleplugin.LocalizePlugin"
     }
 }
 

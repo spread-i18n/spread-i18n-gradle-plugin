@@ -1,9 +1,8 @@
-package com.andro.spreadi18ngradle;
+package com.andro.spreadi18ngradleplugin;
 
 import com.andro.spreadi18ncore.Import;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
-import org.gradle.api.Task;
 
 import java.nio.file.Path;
 
