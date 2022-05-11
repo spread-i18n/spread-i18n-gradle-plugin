@@ -1,9 +1,8 @@
 package com.andro.spreadi18ngradle;
 
-import org.gradle.api.provider.Property;
-
 
 public class LocalizePluginExtension {
-    String spreadsheetSourcePath;
+    String sourceSpreadsheetPath = "sample.xls";
+    String targetProjectPath = "sample.xls";
     //String spreadsheetSourcePath;
 }
