@@ -1,8 +1,12 @@
+
 plugins {
-    // Apply the Java Gradle plugin development plugin to add support for developing Gradle plugins
-    `java-gradle-plugin`
-    //`kotlin-gradle-plugin`
+    id("java-gradle-plugin")
+    id("maven-publish")
+    id("com.gradle.plugin-publish") version "0.18.0"
 }
+
+group = "com.andro.spreadi18ngradleplugin"
+version = "0.0.1"
 
 repositories {
     // Use Maven Central for resolving dependencies
@@ -15,10 +19,20 @@ dependencies {
     testImplementation("junit:junit:4.13")
 }
 
+pluginBundle {
+    website = "https://github.com/rojarand/spread-i18n-gradle-plugin"
+    vcsUrl = "https://github.com/rojarand/spread-i18n-gradle-plugin"
+    tags = listOf("internationalization", "localization", "automation", "import", "iOS", "Android", "Excel")
+}
+
 gradlePlugin {
-    // Define the plugin
-    val greeting by plugins.creating {
-        id = "com.andro.spreadi18ngradleplugin"
-        implementationClass = "com.andro.spreadi18ngradleplugin.LocalizePlugin"
+    plugins {
+        create("spreadI18nGradlePlugin") {
+            id = "com.andro.spreadi18ngradleplugin"
+            displayName = "Plugin for automation of project internationalization"
+            description = """Provides functionality to automate import of translations 
+            | stored in an Excel sheet to projects (iOS, Android) using Gradle Build Tool.""".trimMargin()
+            implementationClass = "com.andro.spreadi18ngradleplugin.LocalizePlugin"
+        }
     }
 }
