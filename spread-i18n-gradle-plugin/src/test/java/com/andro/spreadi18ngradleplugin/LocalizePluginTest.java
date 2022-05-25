@@ -11,7 +11,7 @@ public class LocalizePluginTest {
 
         // Create a test project and apply the plugin
         Project project = ProjectBuilder.builder().build();
-        project.getPlugins().apply("com.andro.spreadi18ngradleplugin");
+        project.getPlugins().apply("io.github.rojarand.spreadi18ngradleplugin");
 
         // Verify the result
         assertNotNull(project.getTasks().findByName("localize"));
