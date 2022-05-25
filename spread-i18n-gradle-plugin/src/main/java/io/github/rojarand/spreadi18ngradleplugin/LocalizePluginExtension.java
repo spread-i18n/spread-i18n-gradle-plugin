@@ -1,4 +1,4 @@
-package com.andro.spreadi18ngradleplugin;
+package io.github.rojarand.spreadi18ngradleplugin;
 
 
 public class LocalizePluginExtension {

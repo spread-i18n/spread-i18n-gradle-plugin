@@ -1,4 +1,4 @@
-package com.andro.spreadi18ngradleplugin;
+package io.github.rojarand.spreadi18ngradleplugin;
 
 import org.gradle.testfixtures.ProjectBuilder;
 import org.gradle.api.Project;

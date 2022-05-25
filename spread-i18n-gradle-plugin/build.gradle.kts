@@ -5,7 +5,7 @@ plugins {
     id("com.gradle.plugin-publish") version "0.18.0"
 }
 
-group = "com.andro.spreadi18ngradleplugin"
+group = "io.github.rojarand.spreadi18ngradleplugin"
 version = "0.0.1"
 
 repositories {
@@ -32,7 +32,7 @@ gradlePlugin {
             displayName = "Plugin for automation of project internationalization"
             description = """Provides functionality to automate import of translations 
             | stored in an Excel sheet to projects (iOS, Android) using Gradle Build Tool.""".trimMargin()
-            implementationClass = "com.andro.spreadi18ngradleplugin.LocalizePlugin"
+            implementationClass = "io.github.rojarand.spreadi18ngradleplugin.LocalizePlugin"
         }
     }
 }

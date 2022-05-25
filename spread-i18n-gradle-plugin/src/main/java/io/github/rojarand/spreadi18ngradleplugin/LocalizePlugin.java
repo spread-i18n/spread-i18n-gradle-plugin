@@ -1,4 +1,4 @@
-package com.andro.spreadi18ngradleplugin;
+package io.github.rojarand.spreadi18ngradleplugin;
 
 import com.andro.spreadi18ncore.Import;
 import org.gradle.api.Plugin;
