@@ -1,4 +1,4 @@
-rootProject.name = "gradle-plugin-in-java"
+rootProject.name = "spread-i18n-gradle-plugin"
 
 include("spread-i18n-gradle-plugin")
 
