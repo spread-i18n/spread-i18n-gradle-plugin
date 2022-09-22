@@ -22,7 +22,7 @@ dependencies {
 pluginBundle {
     website = "https://github.com/rojarand/spread-i18n-gradle-plugin"
     vcsUrl = "https://github.com/rojarand/spread-i18n-gradle-plugin"
-    tags = listOf("internationalization", "localization", "automation", "import", "iOS", "Android", "Excel")
+    tags = listOf("internationalization", "localization", "automation", "import", "export", "iOS", "Android", "Excel")
 }
 
 gradlePlugin {
@@ -31,7 +31,8 @@ gradlePlugin {
             id = "io.github.rojarand.spreadi18ngradleplugin"
             displayName = "Plugin for automation of project internationalization"
             description = """Provides functionality to automate import of translations 
-            | stored in an Excel sheet to projects (iOS, Android) using Gradle Build Tool.""".trimMargin()
+            | stored in an Excel sheet to projects (iOS, Android) using Gradle Build Tool.
+            | The plugin also supports export of translations from a project to Excel file,""".trimMargin()
             implementationClass = "io.github.rojarand.spreadi18ngradleplugin.LocalizePlugin"
         }
     }
