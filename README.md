@@ -136,3 +136,4 @@ ln -s /path/to/spread-i18n/spread-i18n-gradle-plugin/spread-i18n-gradle-plugin/*
 
 - Folow the steps from the [Integration](#integration) section
 - Run the tasks described in the [Usage](#usage) section
+

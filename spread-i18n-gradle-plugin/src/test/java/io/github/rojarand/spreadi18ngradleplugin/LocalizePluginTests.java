@@ -7,7 +7,7 @@ import static org.junit.Assert.assertNotNull;
 
 public class LocalizePluginTests {
 
-    private static final String pluginId = "io.github.rojarand.spreadi18ngradleplugin";
+    private static final String pluginId = "io.github.rojarand.spread-i18n-gradle-plugin";
     @Test
     public void plugin_registers_importLocalizations_task() {
 
