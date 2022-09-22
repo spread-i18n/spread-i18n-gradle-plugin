@@ -1,7 +1,11 @@
 package io.github.rojarand.spreadi18ngradleplugin;
 
 
+import java.util.Map;
+
 public class LocalizePluginExtension {
-    String sourceSpreadsheetPath = "";
-    String targetProjectPath = "";
+    String spreadsheetPath = "";
+    String projectPath = "";
+
+    Map<String, String> valueTransformations = null;
 }
