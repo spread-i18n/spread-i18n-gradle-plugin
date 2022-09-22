@@ -28,7 +28,7 @@ pluginBundle {
 gradlePlugin {
     plugins {
         create("spreadI18nGradlePlugin") {
-            id = "io.github.rojarand.spreadi18ngradleplugin"
+            id = "io.github.rojarand.spread-i18n-gradle-plugin"
             displayName = "Plugin for automation of project internationalization"
             description = """Provides functionality to automate import of translations 
             | stored in an Excel sheet to projects (iOS, Android) using Gradle Build Tool.""".trimMargin()
