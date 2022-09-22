@@ -55,7 +55,7 @@ $ ./gradlew build
 
 ## Publishing
 ```console
-$ ./gradlew publishPlugins
+$ ./gradlew publishPlugins -Pgradle.publish.key=<key> -Pgradle.publish.secret=<secret>
 ```
 
 More info available [here](https://docs.gradle.org/current/userguide/publishing_gradle_plugins.html#publish_your_plugin_to_the_plugin_portal).
