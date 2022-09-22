@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # spread-i18n-gradle-plugin
 
 The plugin provides a simple interface for:
@@ -137,9 +136,4 @@ ln -s /path/to/spread-i18n/spread-i18n-gradle-plugin/spread-i18n-gradle-plugin/*
 
 - Folow the steps from the [Integration](#integration) section
 - Run the tasks described in the [Usage](#usage) section
-=======
-Add instructions how to:
-- Build
-- Test
-- Publish
->>>>>>> 40726e4 (Add export capability)
+
