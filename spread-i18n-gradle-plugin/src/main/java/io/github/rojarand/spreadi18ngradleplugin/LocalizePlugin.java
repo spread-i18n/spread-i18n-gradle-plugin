@@ -16,16 +16,8 @@ public class LocalizePlugin implements Plugin<Project> {
     public void apply(Project project) {
         LocalizePluginExtension ext = project.getExtensions().create("localization", LocalizePluginExtension.class);
         TaskContainer taskContainer = project.getTasks();
-        taskContainer.register(IMPORT_LOCALIZATIONS_TASK_NAME, task -> {
-            task.doLast(t -> {
-                importLocalizations(ext);
-            });
-        });
-        taskContainer.register(EXPORT_LOCALIZATIONS_TASK_NAME, task -> {
-            task.doLast(t -> {
-                exportLocalizations(ext);
-            });
-        });
+        taskContainer.register(IMPORT_LOCALIZATIONS_TASK_NAME, task -> task.doLast(t -> importLocalizations(ext)));
+        taskContainer.register(EXPORT_LOCALIZATIONS_TASK_NAME, task -> task.doLast(t -> exportLocalizations(ext)));
     }
 
     private void importLocalizations(LocalizePluginExtension ext) {
