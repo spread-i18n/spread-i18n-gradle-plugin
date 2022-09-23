@@ -14,7 +14,7 @@ The plugin is built on top of the [spread-i18n-core](https://github.com/rojarand
 ```groovy
  plugins {
     ...
-    id 'io.github.rojarand.spread-i18n-gradle-plugin'
+    id "io.github.rojarand.spread-i18n-gradle-plugin" version "0.0.2"
     ...
  }
  ```
