@@ -32,8 +32,16 @@ gradlePlugin {
             displayName = "Plugin for automation of project internationalization"
             description = """Provides functionality to automate import of translations 
             | stored in an Excel sheet to projects (iOS, Android) using Gradle Build Tool.
-            | The plugin also supports export of translations from a project to Excel file,""".trimMargin()
+            | The plugin also supports export of translations from a project to an Excel file,""".trimMargin()
             implementationClass = "io.github.rojarand.spreadi18ngradleplugin.LocalizePlugin"
         }
     }
+}
+
+val jar by tasks.getting(org.gradle.jvm.tasks.Jar::class) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from(configurations.runtimeClasspath.get()
+        .filter { with(it.name) { contains("spread-i18n-core") && endsWith(".jar")} }
+        .map { if (it.isDirectory) it else { zipTree(it) }
+    })
 }
