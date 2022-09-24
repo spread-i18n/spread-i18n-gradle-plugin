@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "io.github.rojarand.spreadi18ngradleplugin"
-version = "0.0.2"
+version = "0.0.9"
 
 repositories {
     // Use Maven Central for resolving dependencies
