@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "io.github.rojarand.spreadi18ngradleplugin"
-version = "0.0.9"
+version = "1.0.0"
 
 repositories {
     // Use Maven Central for resolving dependencies
@@ -30,7 +30,7 @@ gradlePlugin {
     plugins {
         create("spreadI18nGradlePlugin") {
             id = "io.github.rojarand.spread-i18n-gradle-plugin"
-            displayName = "Plugin for automation of project internationalization"
+            displayName = "A plugin for automation of project internationalization"
             description = """Provides functionality to automate import of translations 
             | stored in an Excel sheet to projects (iOS, Android) using Gradle Build Tool.
             | The plugin also supports export of translations from a project to an Excel file,""".trimMargin()
