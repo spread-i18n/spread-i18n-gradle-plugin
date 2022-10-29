@@ -16,7 +16,7 @@ repositories {
 dependencies {
     // Use JUnit test framework for unit tests
     //implementation("com.andro.spreadi18ncore:spread-i18n-core:1.0-SNAPSHOT")
-    implementation(files("libs/spread-i18n-core-1.0-SNAPSHOT.jar"))
+    implementation(files("libs/spread-i18n-core-1.0.0.jar"))
     testImplementation("junit:junit:4.13")
 }
 
