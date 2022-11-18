@@ -17,7 +17,7 @@ The plugin assumes that your iOS project uses [Gradle build tool](https://gradle
 //Groovy
 plugins {
     ...
-    id "io.github.rojarand.spread-i18n-gradle-plugin" version "0.0.9"
+    id "io.github.rojarand.spread-i18n-gradle-plugin" version "1.0.0"
     ...
 }
  ```
@@ -26,7 +26,7 @@ plugins {
 //Kotlin
 plugins {
     ...
-    id("io.github.rojarand.spread-i18n-gradle-plugin") version "0.0.9"
+    id("io.github.rojarand.spread-i18n-gradle-plugin") version "1.0.0"
     ...
 }
  ```
@@ -108,6 +108,6 @@ $ mkdir buildSrc
 ln -s /path/to/spread-i18n/spread-i18n-gradle-plugin/spread-i18n-gradle-plugin/* .
 ```
 
-- Folow the steps from the [Integration](#integration) section
+- Follow the steps from the [Integration](#integration) section
 - Run the tasks described in the [Usage](#usage) section
 

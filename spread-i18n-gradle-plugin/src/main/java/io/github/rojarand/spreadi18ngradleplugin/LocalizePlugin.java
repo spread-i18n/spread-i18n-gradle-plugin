@@ -1,6 +1,5 @@
 package io.github.rojarand.spreadi18ngradleplugin;
 
-import com.andro.spreadi18ncore.transfer.TransferException;
 import org.gradle.api.GradleException;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
@@ -25,7 +24,7 @@ public class LocalizePlugin implements Plugin<Project> {
             Path projectPath = Path.of(ext.projectPath);
             Path spreadsheetPath = Path.of(ext.spreadsheetPath);
             com.andro.spreadi18ncore.Project.onPath(projectPath).importFrom(spreadsheetPath, ext.valueTransformations);
-        } catch (TransferException e) {
+        } catch (Throwable e) {
             throw new GradleException("Error occurred during import: "+e.getMessage(), e);
         }
     }
@@ -35,7 +34,7 @@ public class LocalizePlugin implements Plugin<Project> {
             Path projectPath = Path.of(ext.projectPath);
             Path spreadsheetPath = Path.of(ext.spreadsheetPath);
             com.andro.spreadi18ncore.Project.onPath(projectPath).exportTo(spreadsheetPath, ext.valueTransformations);
-        } catch (TransferException e) {
+        } catch (Throwable e) {
             throw new GradleException("Error occurred during export: "+e.getMessage(), e);
         }
     }
